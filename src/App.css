@@ -1,0 +1,31 @@
+/* Make the container full screen and use flex */
+:root{
+  background-color: black;
+  color: white;
+}
+
+.app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Left content takes some space */
+.left-content {
+  flex: 1; /* takes remaining space */
+  padding: 2rem;
+  background-color: grey; 
+}
+
+/* Right globe container */
+.right-globe {
+  flex: 1; /* takes remaining space */
+  position: relative;
+}
+
+/* Make globe canvas fill the container */
+.right-globe canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
